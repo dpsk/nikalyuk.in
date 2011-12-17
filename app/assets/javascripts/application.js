@@ -14,5 +14,5 @@ $(function(){
     'opacity' : 0.415,
     'fallback' : '',
     'monochrome' : true
-  }).css('background-color', '#666');
+  }).css('background-color', '#9999ff');
 });

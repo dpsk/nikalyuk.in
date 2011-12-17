@@ -5,3 +5,9 @@
  *= require_self
  *= require_tree . 
 */
+.links {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  margin: 0 0 20px;
+}

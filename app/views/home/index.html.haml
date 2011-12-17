@@ -1,1 +1,25 @@
-Nikalyukin Mikhail
+.links
+  = link_to image_tag("github.svg"), "https://github.com/dpsk"
+  = link_to image_tag("linkedin_alt.svg"), "http://wwwedin.com/pub/mikhail-nikalyukin/39/4b6/31b"
+  = link_to image_tag("twitter_alt.svg"), "http://twitter.com/#!/dpskftw"
+  = link_to image_tag("skype.svg"), "skype:dups1k?call"
+  = link_to image_tag("last.fm.svg"), "http://www.lastfm.ru/user/dups1k"
+  = link_to image_tag("facebook_alt.svg"), "http://www.facebook.com/dpskftw"
+  = link_to image_tag("foursquare.svg"), "https://foursquare.com/dpskftw"
+
+.share
+  %script{:src => "https://apis.google.com/js/plusone.js", :type => "text/javascript"}
+  %g:plusone
+  %a.twitter-follow-button{"data-lang" => "en", "data-show-count" => "true", :href => "https://twitter.com/dpskftw"} Follow @dpskftw
+  :javascript
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  #fb-root
+  :javascript
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=292571834095924";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  .fb-like{"data-font" => "verdana", "data-href" => "http://nikalyuk.in", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
