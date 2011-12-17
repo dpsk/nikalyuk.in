@@ -8,7 +8,6 @@ tmp/
 .rvmrc
 *.swp
 *.swo
-database.yml
 coverage/
 public/system
 crb.sublime-project
