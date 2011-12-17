@@ -7,3 +7,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(function(){
+  $('body').noisy({
+    'intensity' : 0.534,
+    'size' : '200',
+    'opacity' : 0.415,
+    'fallback' : '',
+    'monochrome' : true
+  }).css('background-color', '#666');
+});
