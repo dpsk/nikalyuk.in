@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.1.1'
+gem 'sqlite3'
+gem 'haml-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
@@ -10,3 +12,8 @@ end
 
 gem 'jquery-rails'
 
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara', '~> 1.1.1'
+  gem "fuubar"
+end
