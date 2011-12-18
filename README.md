@@ -1,5 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/dpsk/crb.png)](http://travis-ci.org/dpsk/crb)
-
 General
 =======
 
