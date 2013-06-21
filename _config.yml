@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://nikalyuk.in
+title: Mikhail Nikalyukin
+subtitle: Ruby on Rails Blog
+author: Mikhail Nikalyukin
 simple_search: http://google.com/search
-description:
+description: "Do what i love. Love what i do."
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: idups1k@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -63,23 +63,26 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: dpsk
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: dpskftw
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+googleplus_user: 102514352683831634549
 googleplus_hidden: false
+
+# Coderwall
+coderwall_user: dpsk
 
 # Pinboard
 pinboard_user:
@@ -90,11 +93,11 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: mikhailnikalyukin
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: "UA-25441493-4"
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
