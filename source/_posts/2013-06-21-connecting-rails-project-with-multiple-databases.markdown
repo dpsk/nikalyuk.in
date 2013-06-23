@@ -3,10 +3,11 @@ layout: post
 title: "Connecting rails project with multiple databases"
 date: 2013-06-21 16:22
 comments: true
+keywords: Rails, Ruby, Databases, MySQL, multiple connections, multiple databases
 categories: [Rails, Ruby, Databases, MySQL]
 ---
 
-Today on one of my Rails project i was in need to implement support ticketing system. Database for this system was already working for a good amount of time, so i was forced to use it as a source. I want to share my experience, first of all we should create base class in the ``/app/models/``, so we can inherit models, that will use external database as source, from it.
+I want to share my experience with multiple database and Rails 3.2 application. Today on one of my project i was in need to implement support ticketing system. Database for this system was already working for a good amount of time, so i was forced to use it as a source. So let's start, first of all we should create base class in the ``/app/models/``, so we can inherit models, that will use external database as source, from it.
 {% codeblock  app/models/support_base.rb %}
 class SupportBase < ActiveRecord::Base
 
