@@ -7,7 +7,7 @@ keywords: Rails, Ruby, Databases, MySQL, multiple connections, multiple database
 categories: [Rails, Ruby, Databases, MySQL]
 ---
 
-I want to share my experience with multiple database and Rails 3.2 application. Today on one of my project i was in need to implement support ticketing system. Database for this system was already working for a good amount of time, so i was forced to use it as a source. So let's start, first of all we should create base class in the ``/app/models/``, so we can inherit models, that will use external database as source, from it.
+I want to share my experience with multiple database and Rails 3.2 application. Today on one of my project i was in need to implement support ticketing system. Database for this system was already working for a good amount of time, so i was forced to use it as a source. So let's start, first of all we should create base class in the ``/app/models/``, so we can inherit models, that will use external database as source.
 {% codeblock  app/models/support_base.rb %}
 class SupportBase < ActiveRecord::Base
 
@@ -19,9 +19,9 @@ class SupportBase < ActiveRecord::Base
 end
 {% endcodeblock %}
 <!--more-->
-The ``self.abstract_class = true`` tells Active Record to not look up for a table, since this calss is only used to add customm settings we don't need any database table for it.
+The ``self.abstract_class = true`` tells Active Record to not look up for a table, since this class is only used to add customm settings we don't need any database table for it.
 
-After that we need to create a databases.rake file that will wrap database tasks for external database.
+After that we should create a databases.rake file that will wrap database tasks for external database.
 
 {% codeblock lang:ruby lib/tasks/databases.rake %}
 namespace :support do
@@ -71,7 +71,7 @@ namespace :support do
 end
 {% endcodeblock %}
 
-We basically get all the standart rake database tasks, but wrap them in the support namespace and redefine application paths, so rake will run this commands on the external database.
+We basically get all the standart rake database tasks wrapped in the support namespace and redefine application paths, so rake will run this commands on the external database.
 
 ## Now, let's create files that we mention in this task:
   - ``db_support`` folder in the root of application

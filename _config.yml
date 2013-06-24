@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://dpsk.github.io
+url: http://nikalyuk.in
 title: Mikhail Nikalyukin
 subtitle: Ruby on Rails Blog
 author: Mikhail Nikalyukin
@@ -14,6 +14,8 @@ description: "Do what i love. Love what i do."
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
 # Additionally, %o will give you the ordinal representation of the day
 date_format: "ordinal"
+
+addthis_profile_id: "ra-51c6b10521ca954f"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
@@ -71,6 +73,7 @@ github_skip_forks: true
 # Twitter
 twitter_user: dpskftw
 twitter_tweet_button: true
+twitter_follow_button: true
 
 # Google +1
 google_plus_one: true
