@@ -9,6 +9,7 @@ categories: [Rails, Ruby, CI, Jenkins, Cucumber, Ubnutu, RSpec]
 
 ## Jenkins
 
+{% img right /images/posts/jenkins_logo.png 'Jenkins logo' %}
 This is a short guide on how to setup Jenkins(Hudson) for Rails project with cucumber features. The steps are described for Ubuntu machine. First of all - what is Jenkins?
 
 Jenkins is an award-winning application that monitors executions of repeated jobs, such as building a software project or jobs run by cron. Among those things, current Jenkins focuses on the following two jobs:
@@ -72,21 +73,21 @@ git config --global user.name "Jenkins Hudson"
 
 ## Jenkins Plugins
 
-Now let's install some useful plusing for Jenkins. Go to the  *Manage Jenkins -> Manage Plugins* and check following plugins:
+Now let's install some useful plugins for Jenkins. Go to the  *Manage Jenkins -> Manage Plugins* and check following plugins:
 
-  -Git Client Plugin
-  -GitHub Plugin
-  -Ruby Plugin
-  -Rake plugin
-  -Cucumber plugin
+ * Git Client Plugin
+ * GitHub Plugin
+ * Ruby Plugin
+ * Rake plugin
+ * Cucumber plugin
 
 ## Add project to Jenkins
 
-Now we a ready to add our project to Jenkins. Go to the *New Job -> Free-style* Navigate to ``Source Code Managment`` menu and choose Git, enter your git repository address and specify the branch.
+Now we a ready to add our project to Jenkins. Go to the *New Job -> Free-style* Navigate to ``Source Code Management`` menu and choose Git, enter your git repository address and specify the branch.
 
 {% img /images/posts/hudson_git.png 'Jenkins Git options' 'Jenkins Git options' %}
 
-Now we only need to specify commands for building our project. Specify "Execute shell script" and add folowing commands, you may want to change them for your needs:
+Now we only need to specify commands for building our project. Specify "Execute shell script" and add following commands, you may want to change them for your needs:
 
 ```
 #!/bin/bash -x
@@ -98,7 +99,7 @@ rake db:test:prepare RAILS_ENV=test
 cucumber
 ```
 
-You also may want to add some notifications, for my project i'm using hipchat notification, but the most easiest solution to setup is email notifications.You will need to add SMTP settings in the *Manage Jenkins -> System Configurations -> E-mail Notification*. After that just specify emails in the project settings.
+You also may want to add some notifications, for my project i'm using hipchat notification, but the most easiest solution to setup is email notifications. You will need to add SMTP settings in the *Manage Jenkins -> System Configurations -> E-mail Notification*. After that just specify emails in the project settings.
 
 If you want to run your rspec tests instead of cucumber, or run all together just change your build commands.
 
