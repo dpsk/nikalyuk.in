@@ -10,6 +10,8 @@ I'm frequently find myself in need to measure request time of remote request fro
 Before we start, here is an image of Dr. Faraday from LOST:
 
 {% img center /images/posts/faraday-lost.jpg 'Faraday' %}
+
+By the way github handle of faraday author is @**lost**island. Coincidence? I don't think so :)
 <!--more-->
 
 To the work! Let's look inside the [instrumentation middleware](https://github.com/lostisland/faraday_middleware/blob/master/lib/faraday_middleware/instrumentation.rb):
